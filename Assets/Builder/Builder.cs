@@ -1,4 +1,4 @@
-abstract class Builder
+public abstract class Builder
 {
     public abstract void BuildGun(int level, bool type);
     public abstract void BuildTower(int level);
