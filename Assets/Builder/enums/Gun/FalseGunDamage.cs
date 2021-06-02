@@ -1,18 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class FalseGunDamage : MonoBehaviour
+public enum FalseGunDamage
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    Level1 = 1,
+    Level2 = 2,
+    Level3 = 3,
 }

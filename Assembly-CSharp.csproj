@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{B8B2A7AE-BB07-F3F4-20A0-03D59B9A91B2}</ProjectGuid>
+    <ProjectGuid>{6E95D1F5-74B5-78FD-9F45-27F459C9318A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -56,15 +56,19 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Builder\Builder.cs" />
-    <Compile Include="Assets\Builder\Tank.cs" />
-    <Compile Include="Assets\Builder\Gun.cs" />
-    <Compile Include="Assets\Builder\Corpus.cs" />
     <Compile Include="Assets\Builder\Tower.cs" />
-    <Compile Include="Assets\Builder\enums\Gun\TrueGunAccuracy.cs" />
+    <Compile Include="Assets\Builder\Builder.cs" />
+    <Compile Include="Assets\Builder\Corpus.cs" />
+    <Compile Include="Assets\Builder\Tank.cs" />
     <Compile Include="Assets\Builder\enums\Gun\FalseGunAccuracy.cs" />
     <Compile Include="Assets\Builder\enums\Gun\TrueGunDamage.cs" />
     <Compile Include="Assets\Builder\enums\Gun\FalseGunDamage.cs" />
+    <Compile Include="Assets\Builder\Gun.cs" />
+    <Compile Include="Assets\Builder\enums\Gun\TrueGunAccuracy.cs" />
+    <Compile Include="Assets\Builder\enums\Tower\TowerAccurace.cs" />
+    <Compile Include="Assets\Builder\enums\Corpus\CorpusSpeed.cs" />
+    <Compile Include="Assets\Builder\enums\Corpus\CorpusHP.cs" />
+    <Compile Include="Assets\Builder\TankRepo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
