@@ -62,16 +62,17 @@
     <Compile Include="Assets\Builder\TankRepo.cs" />
     <Compile Include="Assets\Builder\Corpus.cs" />
     <Compile Include="Assets\Builder\enums\Corpus\CorpusHP.cs" />
+    <Compile Include="Assets\Map\GridScr.cs" />
     <Compile Include="Assets\Builder\Tank.cs" />
     <Compile Include="Assets\Builder\enums\Corpus\CorpusSpeed.cs" />
     <Compile Include="Assets\Builder\enums\Gun\FalseGunAccuracy.cs" />
+    <Compile Include="Assets\Builder\Director.cs" />
+    <Compile Include="Assets\Map\GridStartScr.cs" />
     <Compile Include="Assets\Builder\enums\Gun\TrueGunDamage.cs" />
     <Compile Include="Assets\Builder\enums\Gun\FalseGunDamage.cs" />
     <Compile Include="Assets\Builder\Gun.cs" />
     <Compile Include="Assets\Builder\enums\Gun\TrueGunAccuracy.cs" />
-    <Compile Include="Assets\Builder\Director.cs" />
-    <Compile Include="Assets\Map\GridScr.cs" />
-    <Compile Include="Assets\Map\GridStartScr.cs" />
+    <Compile Include="Assets\Map\GridScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
