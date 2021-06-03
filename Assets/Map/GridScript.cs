@@ -29,6 +29,7 @@ public class GridScript : MonoBehaviour
                 if (Random.Range(0, 4) == 3)
                 {
                     Grid[Colums, Rows] = Block;
+                  //  CreateEntity(Block, GetCellWorldPosition(i, j) + new Vector3(cellSize, cellSize));
                     continue;
                 }
                 if (Random.Range(0, 6) == 3)

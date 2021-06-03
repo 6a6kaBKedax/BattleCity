@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class Tank : MonoBehaviour
 {
-    Gun gun;
-    Corpus corpus;
-    Tower tower;
+    public string TankId { get; set; }
+    public string Fracktion { get; set; }
+    //Tank type
+    public Gun gun { get; set; }
+    public Corpus corpus { get; set; }
+    public Tower tower { get; set; }
 }
