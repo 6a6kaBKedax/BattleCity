@@ -1,10 +1,17 @@
+using UnityEngine;
+
 public class TankRepo : Builder
 {
     //private string Fracktion;
-    public Tank Tank = new Tank();
+    
+
+    public Tank Tank;
     public TankRepo(string fracktion, bool isPlayer)
     {
-        //this.Fracktion = Fracktion;
+        GameObject ctor = new GameObject();
+        ctor.AddComponent<Tank>();
+        Tank = ctor.GetComponent<Tank>();
+            //this.Fracktion = Fracktion;
         Tank.Fracktion = fracktion;
         Tank.IsPlayer = isPlayer;
     }
@@ -20,14 +27,15 @@ public class TankRepo : Builder
             default:
                 break;
         }
+        Tank.tower = tower;
     }
 
-    public override void BuildGun(int level, bool type)
+    public override void BuildGun(int level, int type)
     {
         Gun gun = new Gun();
         gun.Level = level;
-        gun.Type = type;
-        if (type)
+        gun.Barrels = type;
+        if (type == 1)
         {
             switch (level)
             {
@@ -49,6 +57,8 @@ public class TankRepo : Builder
                     break;
             }
         }
+        Tank.gun = gun;
+        Debug.Log(Tank.gun.Level);
     }
 
     public override void BuildCorpus(int level)
@@ -63,6 +73,7 @@ public class TankRepo : Builder
             default:
                 break;
         }
+        Tank.corpus = corpus;
     }
 
     public override Tank GetTank()

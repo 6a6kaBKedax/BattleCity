@@ -348,6 +348,65 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1222933955
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1222933957}
+  - component: {fileID: 1222933956}
+  m_Layer: 0
+  m_Name: ListObj
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1222933956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1222933955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23ca9da9733a5444c88cf40c584921f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GunsOneBurrel:
+  - {fileID: 21300000, guid: 6c55d1b41192f50409d83ab5e5953d29, type: 3}
+  - {fileID: 21300000, guid: dba2347742dc4884a9f385a783661418, type: 3}
+  - {fileID: 21300000, guid: ef52641bac94e0642b7d213ffbd429e8, type: 3}
+  GunsTwoBurrels:
+  - {fileID: 21300000, guid: 79ab9a8b8d2df024088cf7a3ca6dc45a, type: 3}
+  - {fileID: 21300000, guid: 6093598df13cc0e409217e28d25d435b, type: 3}
+  - {fileID: 21300000, guid: a65072100cf3fe54bb4febd94db58d97, type: 3}
+  Towers:
+  - {fileID: 21300000, guid: 824ea3f6607b3d444ab24cd5340a1e5f, type: 3}
+  - {fileID: 21300000, guid: 78696e24cbcb7d0468b6482fb15339e5, type: 3}
+  - {fileID: 21300000, guid: c433d9ca749351c4f8acb6f70448add5, type: 3}
+  Corpuses:
+  - {fileID: 21300000, guid: 519db26ac7648064fabb6f100ecfe3db, type: 3}
+  - {fileID: 21300000, guid: be4c24bb3e79f0046a8fb7bfdcbdc3d2, type: 3}
+  - {fileID: 21300000, guid: 8c06fc87eec18e646ad87ef59d8ee962, type: 3}
+--- !u!4 &1222933957
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1222933955}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5, y: -7, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &469369243843366466
 PrefabInstance:
   m_ObjectHideFlags: 0

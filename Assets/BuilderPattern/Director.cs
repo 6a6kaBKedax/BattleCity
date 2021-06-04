@@ -6,7 +6,7 @@ public class Director
         this.builder = builder;
     }
 
-    public void CreateGun(int level, bool type) 
+    public void CreateGun(int level, int type) 
     {
         builder.BuildGun(level, type);
     }

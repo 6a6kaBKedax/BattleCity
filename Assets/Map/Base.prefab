@@ -84,6 +84,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdce1d98d76def547abc0558ecafc0ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ThisBase: {fileID: 5559204295910800332}
+  Tank: {fileID: 469369243269910728, guid: e5951b7d32b02304fad6b0f9fc15fa7f, type: 3}
   Fracktion: {r: 0, g: 0, b: 0, a: 0}
   HP: 20
   ActiveTanks: 30
