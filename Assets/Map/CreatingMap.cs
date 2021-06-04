@@ -21,8 +21,8 @@
         private GameObject CreateBase(Color Command, Vector2 vector2) 
         {
             GameObject localBase = Base;
-            //localBase.GetComponent<Renderer>().material.color = Command;
             GameObject a = Instantiate(localBase, localBase.transform.position, Quaternion.identity);
+            a.GetComponent<Base>().Inicialization(Command);
             a.transform.localPosition = vector2;
             return a;
         }
@@ -44,14 +44,19 @@
                         GameObject a = Instantiate(Block, Block.transform.position, Quaternion.identity);
                         a.transform.localPosition = vector;
                         arrays[i, j] = a;
+                        continue;
                     }
-                    else if (GreenBaseExist == false && UnityEngine.Random.Range(0, 5) == 2)
+                    if (GreenBaseExist == false && UnityEngine.Random.Range(0, 20) == 2)
                     {
                         arrays[i, j] = CreateBase(Color.green, new Vector2(Coordinates.x + i, Coordinates.y + j));
+                        GreenBaseExist = true;
+                        continue;
                     }
-                    else if (RedBaseExist == false && UnityEngine.Random.Range(0, 5) == 2)
+                    if (RedBaseExist == false && UnityEngine.Random.Range(0, 20) == 2)
                     {
                         arrays[i, j] = CreateBase(Color.red, new Vector2(Coordinates.x + i, Coordinates.y + j));
+                        RedBaseExist = true;
+                        continue;
                     }
                 }
             }

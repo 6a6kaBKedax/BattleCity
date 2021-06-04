@@ -84,6 +84,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdce1d98d76def547abc0558ecafc0ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Fracktion: {r: 0, g: 0, b: 0, a: 0}
   HP: 20
   ActiveTanks: 30
 --- !u!23 &4551116949096460868

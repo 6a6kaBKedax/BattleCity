@@ -1,19 +1,18 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using System;
 using Assets.BuilderPattern.enums.Base;
 
 public class Base : MonoBehaviour
 {
-    private string Fracktion;
+    public UnityEngine.Color Fracktion;
     public int HP;
     public int ActiveTanks;
 
-    public Base(string Fracktion, Transform transform)
+    public void Inicialization(UnityEngine.Color fracktion)
     {
-        this.Fracktion = Fracktion;
-        this.HP = (int)BaseHp.Level1;
-        this.ActiveTanks = (int)BaseTanks.Level1;
+        Fracktion = fracktion;
+        HP = (int)BaseHp.Level1;
+        ActiveTanks = (int)BaseTanks.Level1;
     }
 }
 
