@@ -18,11 +18,11 @@
 
         GameObject[,] arrays;
 
-        private GameObject CreateBase(Color Command, Vector2 vector2) 
+        private GameObject CreateBase(Color Command, Vector2 vector2, bool isplayer) 
         {
             GameObject localBase = Base;
             GameObject a = Instantiate(localBase, localBase.transform.position, Quaternion.identity);
-            a.GetComponent<Base>().Inicialization(Command);
+            a.GetComponent<Base>().Inicialization(Command, isplayer);
             a.transform.localPosition = vector2;
             return a;
         }
@@ -46,15 +46,15 @@
                         arrays[i, j] = a;
                         continue;
                     }
-                    if (GreenBaseExist == false && UnityEngine.Random.Range(0, 20) == 2)
+                    if (GreenBaseExist == false && UnityEngine.Random.Range(0, 50) == 2)
                     {
-                        arrays[i, j] = CreateBase(Color.green, new Vector2(Coordinates.x + i, Coordinates.y + j));
+                        arrays[i, j] = CreateBase(Color.green, new Vector2(Coordinates.x + i, Coordinates.y + j), true);
                         GreenBaseExist = true;
                         continue;
                     }
-                    if (RedBaseExist == false && UnityEngine.Random.Range(0, 20) == 2)
+                    if (RedBaseExist == false && UnityEngine.Random.Range(0, 50) == 2)
                     {
-                        arrays[i, j] = CreateBase(Color.red, new Vector2(Coordinates.x + i, Coordinates.y + j));
+                        arrays[i, j] = CreateBase(Color.red, new Vector2(Coordinates.x + i, Coordinates.y + j), false);
                         RedBaseExist = true;
                         continue;
                     }
@@ -66,7 +66,7 @@
                 int j = UnityEngine.Random.Range(0, Rows - 1);
                 if (arrays[i , j] == null)
                 {
-                    CreateBase(Color.green, new Vector2(Coordinates.x + i, Coordinates.y + j));
+                    CreateBase(Color.green, new Vector2(Coordinates.x + i, Coordinates.y + j), true);
                     GreenBaseExist = true;
                 }
             }
@@ -76,7 +76,7 @@
                 int j = UnityEngine.Random.Range(0, Rows - 1);
                 if (arrays[i, j] == null)
                 {
-                    CreateBase(Color.red, new Vector2(Coordinates.x + i, Coordinates.y + j));
+                    CreateBase(Color.red, new Vector2(Coordinates.x + i, Coordinates.y + j), false);
                     RedBaseExist = true;
                 }
             }

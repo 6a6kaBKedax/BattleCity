@@ -65,22 +65,21 @@
     <Compile Include="Assets\BuilderPattern\enums\Corpus\CorpusHP.cs" />
     <Compile Include="Assets\BuilderPattern\enums\Base\BaseHp.cs" />
     <Compile Include="Assets\BuilderPattern\Entites\Tower.cs" />
-    <Compile Include="Assets\Map\GridScr.cs" />
     <Compile Include="Assets\BuilderPattern\Repo\BaseRepo.cs" />
     <Compile Include="Assets\BuilderPattern\Entites\Gun.cs" />
     <Compile Include="Assets\BuilderPattern\enums\Corpus\CorpusSpeed.cs" />
     <Compile Include="Assets\BuilderPattern\enums\Gun\FalseGunAccuracy.cs" />
-    <Compile Include="Assets\Map\GridScript.cs" />
     <Compile Include="Assets\BuilderPattern\Director.cs" />
     <Compile Include="Assets\BuilderPattern\Repo\TankRepo.cs" />
-    <Compile Include="Assets\Map\GridStartScr.cs" />
     <Compile Include="Assets\BuilderPattern\enums\Gun\TrueGunDamage.cs" />
     <Compile Include="Assets\Map\BlockScr.cs" />
+    <Compile Include="Assets\Movement\Fire.cs" />
     <Compile Include="Assets\BuilderPattern\Base\Base.cs" />
     <Compile Include="Assets\BuilderPattern\enums\Gun\FalseGunDamage.cs" />
     <Compile Include="Assets\BuilderPattern\enums\Gun\TrueGunAccuracy.cs" />
     <Compile Include="Assets\BuilderPattern\Entites\Corpus.cs" />
-    <Compile Include="Assets\Movement\Fire.cs" />
+    <Compile Include="Assets\BuilderPattern\Repo\CreatingTank.cs" />
+    <Compile Include="Assets\Textures\TexturesList.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

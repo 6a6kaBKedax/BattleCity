@@ -1,11 +1,12 @@
 public class TankRepo : Builder
 {
-    private string Fracktion;
+    //private string Fracktion;
     public Tank Tank = new Tank();
-    public TankRepo(string Fracktion)
+    public TankRepo(string fracktion, bool isPlayer)
     {
-        this.Fracktion = Fracktion;
-        Tank.Fracktion = this.Fracktion;
+        //this.Fracktion = Fracktion;
+        Tank.Fracktion = fracktion;
+        Tank.IsPlayer = isPlayer;
     }
     override public void BuildTower(int Level)
     {
