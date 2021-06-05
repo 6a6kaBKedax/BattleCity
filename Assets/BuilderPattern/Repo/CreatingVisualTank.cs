@@ -9,34 +9,24 @@
         TexturesList textures;
         GameObject CurrentTank;
 
-        public void BuildTank(GameObject tank)
+        public void BuildTank(ref GameObject tank)
         {
             CurrentTank = tank;
             Gun(CurrentTank.GetComponent<Tank>().gun.Level, CurrentTank.GetComponent<Tank>().gun.Barrels);
             Tower(CurrentTank.GetComponent<Tank>().tower.Level);
             Corpus(CurrentTank.GetComponent<Tank>().corpus.Level);
+            tank = CurrentTank;
         }
 
         private void Gun(int level, int burrel) 
         {
-            Transform a = CurrentTank.transform.Find("Gun");
-            try
+            if (burrel == 1)
             {
-                Debug.Log("CurrentTank.GetComponent<Tank>().gun.Level " + CurrentTank.GetComponent<Tank>().gun.Level);
-                Debug.Log("Level" + level);
-                Debug.Log(a.GetComponent<SpriteRenderer>().sprite.name);
-                if (burrel == 1)
-                {
-                    a.GetComponent<SpriteRenderer>().sprite = textures.GunsOneBurrel[level];
-                }
-                else if (burrel == 2)
-                {
-                    a.GetComponent<SpriteRenderer>().sprite = textures.GunsOneBurrel[level];
-                }
+                CurrentTank.gameObject.transform.Find("Gun").GetComponent<SpriteRenderer>().sprite = textures.GunsOneBurrel[level];
             }
-            catch (ArgumentOutOfRangeException ex) 
+            else if (burrel == 2)
             {
-                a.GetComponent<SpriteRenderer>().sprite = null;
+                CurrentTank.gameObject.transform.Find("Gun").GetComponent<SpriteRenderer>().sprite = textures.GunsTwoBurrels[level];
             }
         }
 

@@ -58,7 +58,6 @@ public class TankRepo : Builder
             }
         }
         Tank.gun = gun;
-        Debug.Log(Tank.gun.Level);
     }
 
     public override void BuildCorpus(int level)

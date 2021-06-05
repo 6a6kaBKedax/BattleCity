@@ -25,12 +25,11 @@ public class Base : MonoBehaviour
     {
         // ”кажи уроооовень в BaseRepo
         BaseRepo baseRepo = new BaseRepo();
-        Tank logic = baseRepo.CreateTankLogical(Fracktion.ToString(), IsPlayer);
+        Tank logic = baseRepo.CreateTankLogical(Fracktion.ToString(), IsPlayer, UnityEngine.Random.Range(1, 3), UnityEngine.Random.Range(1, 3), UnityEngine.Random.Range(1, 3), UnityEngine.Random.Range(1, 2));
         GameObject Physic = Instantiate(Tank, ThisBase.transform.root.position, Quaternion.identity);
         Physic = baseRepo.TankRetuner(Physic, logic);
         CreatingVisualTank visualTank = new CreatingVisualTank();
-        Debug.Log(logic.gun.Level);
-        visualTank.BuildTank(Physic);
+        visualTank.BuildTank(ref Physic);
     }
 }
 
